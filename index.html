@@ -23,9 +23,9 @@
         <p>para mais um exemplo</p>
     </section>
     <script>
-        window.alert('aprendendo Javascript!') //alerta no header da página
-        window.confirm('olá mundo?') //pergunta
-        window.prompt('qual seu nome?') //um "formulário"
+        var nome = window.prompt('qual seu nome?') //um "formulário"
+        var nomeconfirmado = window.confirm(nome + ' é seu nome mesmo?') 
+        window.alert = (nomeconfirmado + 'seja bem vindo ao site!')
     </script>
 </body>
 </html>
