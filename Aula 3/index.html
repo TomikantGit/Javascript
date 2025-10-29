@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3 - Manipulação de Dados com váriaveis e Controladores</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Manipulação de Dados</h1>
+    <h2>Os principais tipos de dados primitivos no Javascript são:</h2>
+    <ol>
+        <li>Number</li>
+            <ol>
+                <li>
+                    Float
+                </li>
+                <li>
+                    Int
+                </li>
+            </ol> 
+        <li>String</li>
+        <li>Array</li>
+    </ol>
+</body>
+<script>
+    var nome = window.prompt('Qual é o seu nome?')
+    var melhoramigo = window.prompt(`olá ${nome} qual o nome do seu melhor amigo?`)
+    var idadedouser = Number.parseInt(window.prompt(`Olá novamente ${nome} qual é a sua idade?`))
+    var idade_amigo = Number.parseInt(window.prompt(`E a idade do seu melhor amigo ${melhoramigo} ?`))
+    var idade_combinada = idadedouser + idade_amigo
+    window.alert(`então, o seu nome é ${nome}, o nome do seu melhor amigo é ${melhoramigo}, a sua idade é de ${idadedouser} anos e ele tem ${idade_amigo} anos, e a soma da idade de vocês é ${idade_combinada}`)
+</script>
+</html>
